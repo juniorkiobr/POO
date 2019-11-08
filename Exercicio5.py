@@ -14,7 +14,7 @@ class Data():
             self.mes = mes if (mes == 1 or mes == 2 or mes == 3 or mes == 4 or mes == 5 or mes == 6 or mes == 7 or mes == 8 or mes == 9 or mes == 10 or mes == 11 or mes == 12) else None
             self.ano = ano if dt.max.year >= ano and ano >= dt.min.year else None
 
-        if diaA != None and mesA != None and anoA != None:
+        if diaA != None or mesA != None or anoA != None:
             data = dt.today()
             self.diaA = data.day
             self.mesA = data.month
